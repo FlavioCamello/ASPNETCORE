@@ -2,16 +2,11 @@
     ViewData["Title"] = "Carrinho";
 }
 @model CarrinhoViewModel;
-
 <h3>Meu Carrinho</h3>
-
 <form method="post" asp-action="carrinho">
 </form>
-
-
 <div class="panel panel-default">
     <div class="panel-heading">
-
         <div class="row">
             <div class="col-md-6">
                 Item
@@ -30,10 +25,8 @@
         </div>
     </div>
     <div class="panel-body">
-
         @foreach (var item in Model.Itens)
         {
-            
             <div class="row row-center linha-produto" item-id="@item.Id">
                 <div class="col-md-3">
                     <img class="img-produto-carrinho" src="/images/produtos/large_@(item.Produto.Codigo).jpg" />
@@ -65,7 +58,6 @@
                     </span>
                 </div>
             </div>
-
         }
 
     </div>
@@ -85,7 +77,6 @@
         </div>
     </div>
 </div>
-
 <div class="row">
     <div class="col-md-12">
         <div class="pull-right">
@@ -93,15 +84,15 @@
                 Adicionar Produtos
             </a>
             <a class="btn btn-success" asp-action="cadastro">
-                Preenche Cadastro
+                Preencher Cadastro
             </a>
         </div>
     </div>
 </div>
 
-@section Scripts
-{
-    <script src="~/js/carrinho.js">
-
-    </script>
-}
+    @section Scripts
+        {
+        <script src="~/js/carrinho.js">
+   
+        </script>
+    }
