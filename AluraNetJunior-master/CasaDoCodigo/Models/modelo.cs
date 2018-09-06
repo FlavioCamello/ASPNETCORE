@@ -152,4 +152,17 @@ namespace CasaDoCodigo.Models
 
         
     }
+
+    public class ComparadorPorCategoria : IEqualityComparer<Categoria>
+    {
+        public bool Equals(Categoria x, Categoria y)
+        {
+            return x.Id == y.Id;
+        }
+
+        public int GetHashCode(Categoria obj)
+        {
+            return obj.Id;
+        }
+    }
 }
