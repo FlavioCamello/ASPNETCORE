@@ -72,10 +72,42 @@ namespace CasaDoCodigo.Controllers
             return await pedidoRepository.UpdateQuantidade(itemPedido);
         }
 
-        //[HttpPost]
-        public IActionResult BuscaDeProdutos()
+        
+        public IActionResult BuscaDeProdutos(String pesquisa)
         {
-            return View(produtoRepository.GetProdutos());
+            if (string.IsNullOrEmpty(pesquisa))
+            {
+                IList<Produto> produtos = produtoRepository.GetProdutos();
+                BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
+                pesquisa = "";
+                return View(buscaDeProdutoViewModel);
+            }
+            else
+            {
+                IList<Produto> produtos = produtoRepository.GetProdutos(pesquisa);
+                BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
+                //buscaDeProdutoViewModel.Pesquisa = pesquisa;
+                return View(buscaDeProdutoViewModel);
+            }
         }
+
+      /*  [HttpPost]
+        public IActionResult BuscaDeProdutos(String pesquisa)
+        {
+            //if (string.IsNullOrEmpty(busca))
+            // {
+            IList<Produto> produtos = produtoRepository.GetProdutos();
+            BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
+            //busca = "";
+            return View(buscaDeProdutoViewModel);
+            //  }N
+            //  else
+            //  {
+            //    IList<Produto> produtos = produtoRepository.GetProdutos();
+            //    BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
+            //    //buscaDeProdutoViewModel.Busca = busca;
+            //     return View(buscaDeProdutoViewModel);
+            // }
+        }*/
     }
 }
