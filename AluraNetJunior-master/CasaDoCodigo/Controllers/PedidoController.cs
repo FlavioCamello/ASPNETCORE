@@ -86,28 +86,9 @@ namespace CasaDoCodigo.Controllers
             {
                 IList<Produto> produtos = produtoRepository.GetProdutos(pesquisa);
                 BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
-                //buscaDeProdutoViewModel.Pesquisa = pesquisa;
+                buscaDeProdutoViewModel.Pesquisa = pesquisa;
                 return View(buscaDeProdutoViewModel);
             }
         }
-
-      /*  [HttpPost]
-        public IActionResult BuscaDeProdutos(String pesquisa)
-        {
-            //if (string.IsNullOrEmpty(busca))
-            // {
-            IList<Produto> produtos = produtoRepository.GetProdutos();
-            BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
-            //busca = "";
-            return View(buscaDeProdutoViewModel);
-            //  }N
-            //  else
-            //  {
-            //    IList<Produto> produtos = produtoRepository.GetProdutos();
-            //    BuscaDeProdutoViewModel buscaDeProdutoViewModel = new BuscaDeProdutoViewModel(produtos);
-            //    //buscaDeProdutoViewModel.Busca = busca;
-            //     return View(buscaDeProdutoViewModel);
-            // }
-        }*/
     }
 }
