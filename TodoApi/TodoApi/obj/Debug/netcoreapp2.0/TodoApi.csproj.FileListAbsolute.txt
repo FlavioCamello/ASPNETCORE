@@ -1,0 +1,11 @@
+C:\Users\camel\source\repos\TodoApi\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.deps.json
+C:\Users\camel\source\repos\TodoApi\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.runtimeconfig.json
+C:\Users\camel\source\repos\TodoApi\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.runtimeconfig.dev.json
+C:\Users\camel\source\repos\TodoApi\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.dll
+C:\Users\camel\source\repos\TodoApi\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.pdb
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.csprojAssemblyReference.cache
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.csproj.CoreCompileInputs.cache
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.AssemblyInfoInputs.cache
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.AssemblyInfo.cs
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.dll
+C:\Users\camel\source\repos\TodoApi\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.pdb
